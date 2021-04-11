@@ -4,10 +4,8 @@ use mosiyash\phpcsfixer\yii2\YiisoftConfig;
 use PhpCsFixer\Finder;
 
 require __DIR__.'/vendor/autoload.php';
-require __DIR__.'/YiiConfig.php';
-require __DIR__.'/YiisoftConfig.php';
 
-if (!class_exists('mosiyash\phpcsfixer\yii2\YiisoftConfig', true)) {
+if (!class_exists(YiisoftConfig::class, true)) {
     // @todo change error message
     fwrite(STDERR, "Your php-cs-version is outdated: please upgrade it.\n");
     die(16);
