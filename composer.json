@@ -10,12 +10,12 @@
             "email": "nikita.mosiyash@gmail.com"
         }
     ],
+    "require": {
+        "friendsofphp/php-cs-fixer": " ^2.0"
+    },
     "autoload": {
         "psr-4": {
-            "mosiyash\\phpcsfixer\\yii2": ""
+            "mosiyash\\phpcsfixer\\yii2\\": ""
         }
-    },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": " ^2.0"
     }
 }
