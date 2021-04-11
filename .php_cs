@@ -14,7 +14,7 @@ if (!class_exists('mosiyash\phpcsfixer\yii2\YiisoftConfig', true)) {
 }
 
 $finder = new Finder();
-
+$finder->exclude(__DIR__.'/vendor');
 foreach (['api', 'backend', 'common', 'console', 'frontend'] as $dirName) {
     $finder->in(__DIR__.'/'.$dirName);
     foreach (['runtime', 'web/assets'] as $subDirName) {
