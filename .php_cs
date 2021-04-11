@@ -1,11 +1,11 @@
 <?php
 
-use mosiyash\phpcsfixer\yii2\YiisoftConfig;
+use mosiyash\phpcsfixer\yii2\YiiSoftConfig;
 use PhpCsFixer\Finder;
 
 require __DIR__.'/vendor/autoload.php';
 
-if (!class_exists(YiisoftConfig::class, true)) {
+if (!class_exists(YiiSoftConfig::class, true)) {
     // @todo change error message
     fwrite(STDERR, "Your php-cs-version is outdated: please upgrade it.\n");
     die(16);
@@ -20,7 +20,7 @@ foreach (['api', 'backend', 'common', 'console', 'frontend'] as $dirName) {
     }
 }
 
-return YiisoftConfig::create()
+return YiiSoftConfig::create()
     ->setCacheFile(__DIR__ . '/console/runtime/php_cs.cache')
     ->mergeRules([
         'braces' => [

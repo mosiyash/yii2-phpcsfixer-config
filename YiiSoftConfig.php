@@ -13,7 +13,7 @@ namespace mosiyash\phpcsfixer\yii2;
  * @author Robert Korulczyk <robert@korulczyk.pl>
  * @since 2.0.0
  */
-final class YiisoftConfig extends YiiConfig
+final class YiiSoftConfig extends YiiConfig
 {
     /**
      * {@inheritdoc}
