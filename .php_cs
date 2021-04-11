@@ -4,8 +4,8 @@ use mosiyash\phpcsfixer\yii2\YiisoftConfig;
 use PhpCsFixer\Finder;
 
 require __DIR__.'/vendor/autoload.php';
-require __DIR__.'/common/cs/YiiConfig.php';
-require __DIR__.'/common/cs/YiisoftConfig.php';
+require __DIR__.'/YiiConfig.php';
+require __DIR__.'/YiisoftConfig.php';
 
 if (!class_exists('mosiyash\phpcsfixer\yii2\YiisoftConfig', true)) {
     // @todo change error message
