@@ -1,0 +1,21 @@
+{
+    "name": "mosiyash/yii2-phpcsfixer-config",
+    "description": "PHP-CS-Fixer configuration for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "php-cs-fixer", "phpcsfixer"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Nikita Mosiyash",
+            "email": "nikita.mosiyash@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "mosiyash\\phpcsfixer\\yii2": ""
+        }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": " ^2.0"
+    }
+}
